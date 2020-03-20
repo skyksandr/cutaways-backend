@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "cr-admin",
+    "password": "frdes22",
+    "database": "canopy_radar_dev",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "cr-admin",
+    "password": "frdes22",
+    "database": "canopy_radar_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "cr-admin",
+    "password": "frdes22",
+    "database": "canopy_radar",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

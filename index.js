@@ -20,7 +20,8 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(errorhandler({ log: true }))
 }
 
-app.get('/api/device_logs', deviceLogsController.list),
+app.get('/api/device_logs', deviceLogsController.list)
+app.get('/api/device_log', deviceLogsController.getLast)
 app.post('/push.do',  deviceLogsController.create)
 
 const port = parseInt(process.env.PORT, 10) || 8000

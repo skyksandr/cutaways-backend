@@ -23,6 +23,10 @@ module.exports = class PayloadParser {
     this.data = data
   }
 
+  get phoneNumber(){
+    return this.data.phoneNumber
+  }
+
   get latitude() {
     const degrees = Number(this.nmea[3].substring(0, 2))
     const seconds = Number(this.nmea[3].substring(2))
